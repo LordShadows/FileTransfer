@@ -1,0 +1,104 @@
+.header-pane {
+    -fx-background-color: linear-gradient(#e8e6e8 0%, #d2d0d2 100%);
+    -fx-background-radius: 5px 5px 0px 0px;
+    -fx-border-color: #b0b0b0;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 5px 5px 0px 0px;
+}
+
+.standard-button {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#c7c7c7 0%, #c1c1c1 20%, #c1c1c1 80%, #acacac 100%),
+            white;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: #242d35;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.standard-button:pressed {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#4a77b8 0%, #0047d4 100%),
+            linear-gradient(#4c97fd 0%, #1161ee 100%);
+    -fx-text-fill: white;
+}
+
+.main-button {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#4ba2fb 0%, #055cff 100%),
+            linear-gradient(#6cb3fa 0%, #087eff 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.main-button:pressed {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#4498ff 0%, #0a67de 100%),
+            linear-gradient(#287cf0 0%, #223f8f 100%);
+}
+
+.standard-textfield {
+    -fx-background-color:
+        #b1b1b1,
+        #ffffff;
+    -fx-background-insets: 0,1;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #232323;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-padding: 3 10 3 10;
+}
+
+.standard-textfield:focused {
+    -fx-background-color:
+            #96c3f1,
+            #b1b1b1,
+            #ffffff;
+    -fx-background-insets: -3,0,1;
+    -fx-background-radius: 3,0,0;
+}
+
+.error-textfield {
+    -fx-background-color:
+            rgba(242, 80, 86, 0.6),
+            #b1b1b1,
+            #ffffff;
+    -fx-background-insets: -3,0,1;
+    -fx-background-radius: 3,0,0;
+    -fx-text-fill: #232323;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-padding: 3 5 3 5;
+}
+
+.standard-checkbox .box {
+    -fx-background-color:
+            #b1b1b1,
+            #ffffff;
+    -fx-background-insets: 0,1;
+    -fx-background-radius: 3,2;
+}
+
+.standard-checkbox .mark {
+    -fx-background-color: white;
+}
+
+.standard-checkbox:selected .box {
+    -fx-background-color:
+            #3494f9,
+            #419bf9;
+    -fx-background-insets: 0,1;
+    -fx-background-radius: 3,2;
+}

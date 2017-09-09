@@ -1,0 +1,66 @@
+.close-button {
+     -fx-background-color:
+             linear-gradient(#c7c7c7 0%, #c1c1c1 20%, #c1c1c1 80%, #acacac 100%),
+             white;
+     -fx-background-insets: 0,0 1 1 1;
+     -fx-background-radius: 0 0 5 5, 0 0 4 4;
+     -fx-padding: 3 10 3 10;
+     -fx-text-fill: #242d35;
+     -fx-font-family: "Segoe UI";
+     -fx-font-size: 12px;
+     -fx-cursor: hand;
+ }
+
+.close-button:pressed {
+    -fx-background-color:
+            linear-gradient(#4a77b8 0%, #0047d4 100%),
+            linear-gradient(#4c97fd 0%, #1161ee 100%);
+    -fx-text-fill: white;
+}
+
+.contact-pane {
+    -fx-background-radius: 5px;
+    -fx-background-color: #f6f6f6;
+}
+
+.text-area {
+    -fx-background-color:
+            #e6e6e6,
+            #f9f9f9;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.text-area .content{
+    -fx-background-color: #f9f9f9;
+}
+
+.scroll-bar:horizontal ,
+.scroll-bar:vertical{
+    -fx-background-color:
+            #e6e6e6,
+            #f9f9f9;
+    -fx-background-insets: 1 1 1 0, 1;
+    -fx-pref-width: 10px;
+}
+
+.increment-button ,.decrement-button {
+    -fx-background-color:transparent;
+    -fx-fill: transparent
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #c1c1c1;
+    -fx-background-radius: 5px;
+}
+.scroll-bar .thumb:hover,
+.scroll-bar .thumb:pressed{
+    -fx-background-color: #c1c1c1;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}

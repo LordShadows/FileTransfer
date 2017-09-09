@@ -1,0 +1,255 @@
+.standard-button {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#c7c7c7 0%, #c1c1c1 20%, #c1c1c1 80%, #acacac 100%),
+            white;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: #242d35;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.standard-button:pressed {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#4a77b8 0%, #0047d4 100%),
+            linear-gradient(#4c97fd 0%, #1161ee 100%);
+    -fx-text-fill: white;
+}
+
+.main-button {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#4ba2fb 0%, #055cff 100%),
+            linear-gradient(#6cb3fa 0%, #087eff 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.main-button:pressed {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#4498ff 0%, #0a67de 100%),
+            linear-gradient(#287cf0 0%, #223f8f 100%);
+}
+
+.about-button {
+     -fx-background-color:
+             linear-gradient(#c7c7c7 0%, #c1c1c1 20%, #c1c1c1 80%, #acacac 100%),
+             white;
+     -fx-background-insets: 0,0 1 1 1;
+     -fx-background-radius: 0 0 5 5, 0 0 4 4;
+     -fx-padding: 3 10 3 10;
+     -fx-text-fill: #242d35;
+     -fx-font-family: "Segoe UI";
+     -fx-font-size: 12px;
+     -fx-cursor: hand;
+ }
+
+.about-button:pressed {
+    -fx-background-color:
+            linear-gradient(#4a77b8 0%, #0047d4 100%),
+            linear-gradient(#4c97fd 0%, #1161ee 100%);
+    -fx-text-fill: white;
+}
+
+.search-textfield {
+    -fx-background-color:
+            #d0d0d0,
+            #e1e1e1;
+    -fx-background-insets: -1,0;
+    -fx-background-radius: 4,3;
+    -fx-background-image: url("../img/icon-search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 4px center;
+    -fx-background-size: 15px auto;
+    -fx-padding: 3 10 3 24;
+    -fx-text-fill: #242d35;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-prompt-text-fill: #bebebf;
+}
+
+.file-textfield {
+    -fx-background-color:
+            #b0b0b0,
+            white;
+    -fx-background-insets: -1,0;
+    -fx-background-radius: 11,10;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: #242d35;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-prompt-text-fill: #929292;
+}
+
+.header-button {
+    -fx-background-color: transparent;
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center, center;
+    -fx-border: none;
+    -fx-cursor: hand;
+}
+
+.min-button {
+    -fx-background-image: url("../img/headerbuttons/min-normal.png");
+}
+
+.close-button {
+    -fx-background-image: url("../img/headerbuttons/close-normal.png");
+}
+
+.max-button {
+    -fx-background-image: url("../img/headerbuttons/max-normal.png");
+}
+
+.contact-pane {
+    -fx-background-radius: 5px 0px 0px 5px;
+    -fx-background-color: #f6f6f6;
+    -fx-border-radius:  5px 0px 0px 5px;
+    -fx-border-color: #e6e6e6;
+    -fx-border-width:  0px 1px 0px 0px;
+}
+
+.btn-editing {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#c7c7c7 0%, #c1c1c1 20%, #c1c1c1 80%, #acacac 100%),
+            white;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-cursor: hand;
+    -fx-padding: 0px;
+    -fx-background-image: url("../img/settings.png");
+    -fx-background-size: 14px auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center, center;
+}
+
+.btn-editing:pressed {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#4a77b8 0%, #0047d4 100%),
+            linear-gradient(#4c97fd 0%, #1161ee 100%);
+    -fx-background-image: url("../img/settings-white.png");
+}
+
+.label-editing {
+    -fx-text-fill: gray;
+    -fx-font-size: 11px;
+    -fx-cursor: hand;
+    -fx-font-family: "Segoe UI";
+}
+
+.label-editing:pressed {
+    -fx-text-fill: #1f82f0;
+}
+
+.list-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+}
+
+.scroll-bar:horizontal ,
+.scroll-bar:vertical{
+    -fx-background-color:
+            #e6e6e6,
+            #f9f9f9;
+    -fx-background-insets: 0 0 0 -1, 0;
+    -fx-pref-width: 10px;
+}
+
+.increment-button ,.decrement-button {
+    -fx-background-color:transparent;
+    -fx-fill: transparent
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #c1c1c1;
+    -fx-background-radius: 5px;
+}
+.scroll-bar .thumb:hover,
+.scroll-bar .thumb:pressed{
+    -fx-background-color: #c1c1c1;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI";
+}
+
+.contact-list-view .list-cell {
+    -fx-cursor: hand;
+    -fx-text-fill: #232323;
+ }
+
+.contact-list-view .list-cell:selected {
+    -fx-background-color: #3a91fd;
+    -fx-text-fill: white;
+}
+
+.btn-show-message {
+     -fx-background-color: transparent;
+     -fx-border-color: transparent;
+     -fx-background-image: url("../img/message.png");
+     -fx-background-position: center center;
+     -fx-background-repeat: no-repeat;
+     -fx-background-size: contain;
+     -fx-cursor: hand;
+ }
+
+.btn-show-file {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-image: url("../img/file.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-cursor: hand;
+}
+
+.btn-send {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-border-color: transparent;
+    -fx-background-image: url("../img/send.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-cursor: hand;
+}
+
+.btn-send:pressed {
+    -fx-effect: dropshadow(gaussian, #b0b0b0, 5, 0, 0, 0);
+}
+
+.progress-bar {
+    -fx-background-radius: 10;
+}
+
+.progress-bar .track {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #388ffd;
+    -fx-background-radius: 10;
+}

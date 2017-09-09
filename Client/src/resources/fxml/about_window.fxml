@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="598.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javacode.controllers.AboutWindowController">
+   <effect>
+      <DropShadow color="#383838ce" height="32.0" radius="15.5" width="32.0" />
+   </effect>
+   <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="280.0" styleClass="contact-pane" stylesheets="@../css/about_style.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <children>
+         <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="21.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="21.0">
+            <image>
+               <Image url="@../img/logo.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="57.0" layoutY="28.0" text="File Transfer" textFill="#232323" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="28.0">
+            <font>
+               <Font name="Segoe UI" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="57.0" layoutY="53.0" text="Главный разработчик:" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="53.0">
+            <font>
+               <Font name="Segoe UI" size="12.0" />
+            </font></Label>
+         <Label layoutX="188.0" layoutY="53.0" text="Вадим Зубелик" AnchorPane.leftAnchor="188.0" AnchorPane.topAnchor="53.0">
+            <font>
+               <Font name="Segoe UI" size="12.0" />
+            </font></Label>
+         <TextArea Text="Программа &quot;DarkCom&quot; является условно бесплатной. Используя программой вы полностью подтверждаете свое согласие с этим лицензионным соглашением и всеми правилами, приведенными ниже.&#10;&#10;&#9;&#9;&#9;&#9;&#9;                                            ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ&#10;&#10;  1.  Пользователь данной программы не имеет права ПРОДАВАТЬ её третим лицам!&#10;  2.  Пользователь не имеет права ВНОСИТЬ какие-либо изменения в программу без согласия авторов!&#10;  3.  Пользователю разрешается выкладывать данный софт в интернете ТОЛЬКО с сохранением оригинальной ссылки и авторских прав!&#10;  4.  Пользователь обязан удалить эту программу по первому требованию авторов!&#10;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;                                                    ВНИМАНИЕ&#10;Для работы программы, на компьютере обязательно долженfа быть установлена Java версии 1.8 и выше.&#10;                                              &#10;                                                                     Системные требования к программному продукту:&#10;Для Windows: &#10; - Windows 10 (8u51 или более поздняя)&#10; - Windows 8.x (настольная версия)&#10; - Windows 7 с пакетом обновления 1 (SP1)&#10; - Windows Vista SP2&#10; - Windows Server 2008 R2 с пакетом обновления 1 (SP1) (64-разрядная версия)&#10; - Windows Server 2012 и 2012 R2 (64-разрядная версия)&#10; - RAM: 128 МБ&#10; - Пространство на диске: 124 МБ для JRE; 2 МБ для обновления Java&#10; - Процессор: минимальное требование - Pentium 2 266 МГц&#10; - Браузеры: Internet Explorer 9 и выше, Firefox&#10;&#10;Для Mac OS X:&#10; - Mac на базе процессора Intel под управлением Mac OS X 10.8.3+, 10.9+&#10; - Полномочия администратора для установки&#10; - 64-битный браузер&#10;&#10;Для Linux:&#10; - Oracle Linux 5.5+1&#10; - Oracle Linux 6.x (32-разрядная версия), 6.x (64-разрядная версия)2&#10; - Oracle Linux 7.x (64-разрядная версия)2 (8u20 или более поздняя)&#10; - Red Hat Enterprise Linux 5.5+1, 6.x (32-разрядная версия), 6.x (64-разрядная версия)2&#10; - Red Hat Enterprise Linux 7.x (64-разрядная версия)2 (8u20 или более поздняя)&#10; - Suse Linux Enterprise Server 10 SP2+, 11.x&#10; - Suse Linux Enterprise Server 12.x (64-разрядная версия)2 (8u31 или более поздняя)&#10; - Ubuntu Linux 12.04 LTS, 13.x&#10; - Ubuntu Linux 14.x (8u25 или более поздняя)&#10; - Ubuntu Linux 15.04 (8u45 или более поздняя)&#10; - Ubuntu Linux 15.10 (8u65 или более поздняя)&#10; - Браузеры: Firefox&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;                                       DarkCom © Copyright, Барановичи, 2017 г.&#10;&#10;" editable="false" layoutX="35.0" layoutY="98.0" prefHeight="185.0" prefWidth="518.0" stylesheets="@../css/setting_style.css" text="Программа &quot;File Transfer&quot; является условно бесплатной. Используя программный продукт вы полностью подтверждаете свое согласие с этим лицензионным соглашением и всеми правилами, приведенными ниже.&#10;&#10;&#9;&#9;&#9;&#9;&#9;             ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ&#10;&#10;  1.  Пользователь данной программы не имеет права ПРОДАВАТЬ её третим лицам!&#10;  2.  Пользователь не имеет права ВНОСИТЬ какие-либо изменения в программу без согласия авторов!&#10;  3.  Пользователю разрешается выкладывать данный софт в интернете ТОЛЬКО с сохранением оригинальной ссылки и авторских прав!&#10;  4.  Пользователь обязан удалить эту программу по первому требованию авторов!&#10;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;                  ВНИМАНИЕ&#10;Для работы программы, на компьютере обязательно долженfа быть установлена Java версии 1.8 и выше.&#10;                                              &#10;                                    Системные требования к программному продукту:&#10;Для Windows: &#10; - Windows 10 (8u51 или более поздняя)&#10; - Windows 8.x (настольная версия)&#10; - Windows 7 с пакетом обновления 1 (SP1)&#10; - Windows Vista SP2&#10; - Windows Server 2008 R2 с пакетом обновления 1 (SP1) (64-разрядная версия)&#10; - Windows Server 2012 и 2012 R2 (64-разрядная версия)&#10; - RAM: 128 МБ&#10; - Пространство на диске: 124 МБ для JRE; 2 МБ для обновления Java&#10; - Процессор: минимальное требование - Pentium 2 266 МГц&#10; - Браузеры: Internet Explorer 9 и выше, Firefox&#10;&#10;Для Mac OS X:&#10; - Mac на базе процессора Intel под управлением Mac OS X 10.8.3+, 10.9+&#10; - Полномочия администратора для установки&#10; - 64-битный браузер&#10;&#10;Для Linux:&#10; - Oracle Linux 5.5+1&#10; - Oracle Linux 6.x (32-разрядная версия), 6.x (64-разрядная версия)2&#10; - Oracle Linux 7.x (64-разрядная версия)2 (8u20 или более поздняя)&#10; - Red Hat Enterprise Linux 5.5+1, 6.x (32-разрядная версия), 6.x (64-разрядная версия)2&#10; - Red Hat Enterprise Linux 7.x (64-разрядная версия)2 (8u20 или более поздняя)&#10; - Suse Linux Enterprise Server 10 SP2+, 11.x&#10; - Suse Linux Enterprise Server 12.x (64-разрядная версия)2 (8u31 или более поздняя)&#10; - Ubuntu Linux 12.04 LTS, 13.x&#10; - Ubuntu Linux 14.x (8u25 или более поздняя)&#10; - Ubuntu Linux 15.04 (8u45 или более поздняя)&#10; - Ubuntu Linux 15.10 (8u65 или более поздняя)&#10; - Браузеры: Firefox&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;     File Transfer © Copyright, Барановичи, 2017 г.&#10;&#10;" wrapText="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="86.0">
+            <font>
+               <Font name="Segoe UI" size="12.0" />
+            </font></TextArea>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="anchorPaneMainHeader" prefHeight="27.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Button fx:id="buttonCancel" layoutX="416.0" mnemonicParsing="false" prefHeight="23.0" styleClass="close-button" stylesheets="@../css/about_style.css" text="Закрыть" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0" />
+   </AnchorPane>
+</AnchorPane>

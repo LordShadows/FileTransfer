@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="395.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javacode.controllers.SettingWindowController">
+   <effect>
+      <DropShadow color="#383838ce" height="32.0" radius="15.5" width="32.0" />
+   </effect>
+   <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" styleClass="contact-pane" stylesheets="@../css/setting_style.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <VBox prefHeight="550.0" prefWidth="190.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="81.0" prefWidth="355.0" style="-fx-border-color: #e6e6e6; -fx-border-width: 0px 0px 1px 0px;" VBox.vgrow="ALWAYS">
+            <TextField fx:id="textFieldSearch" layoutX="20.0" layoutY="33.0" prefHeight="21.0" prefWidth="171.0" promptText="Поиск" styleClass="search-textfield" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="33.0" />
+         </AnchorPane>
+         <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="444.0" style="-fx-background-color: #ffffff;">
+            <ListView fx:id="contactsListView" layoutY="5.0" prefHeight="200.0" prefWidth="200.0" styleClass="contact-list-view" stylesheets="@../css/main_style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane fx:id="loadPane" prefHeight="166.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="124.0" layoutX="114.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="201.0" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="163.0">
+                     <image>
+                        <Image url="@../img/load_animation.gif" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="23.0" prefWidth="200.0" styleClass="pane-list-box" stylesheets="@../css/setting_style.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="-18.0">
+               <children>
+                  <HBox layoutX="-37.0" layoutY="-38.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane fx:id="buttonYourContact" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="labelButtoYourContact" alignment="TOP_CENTER" layoutX="2.0" layoutY="3.0" prefHeight="15.0" prefWidth="124.0" text="Ваши контакты" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                                 <styleClass>
+                                    <String fx:value="list-box-label" />
+                                    <String fx:value="pressed" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="list-box-first" />
+                              <String fx:value="pressed" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane fx:id="buttonAllContact" prefHeight="200.0" prefWidth="200.0" styleClass="list-box-last">
+                           <children>
+                              <Label fx:id="labelButtonAllContact" alignment="TOP_CENTER" layoutX="5.0" layoutY="3.0" prefHeight="15.0" prefWidth="117.0" styleClass="list-box-label" text="Все пользователи" textFill="#232323" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </AnchorPane>
+         <AnchorPane maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="51.0" prefWidth="200.0" style="-fx-border-color: #e6e6e6; -fx-border-width: 1px 0px 0px 0px;" VBox.vgrow="ALWAYS">
+            <rotationAxis>
+               <Point3D />
+            </rotationAxis>
+            <children>
+               <Button fx:id="buttonAddContact" layoutX="75.0" layoutY="21.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="224.0" styleClass="standard-button" stylesheets="@../css/main_style.css" text="Добавить в контакты" visible="false" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="9.0" />
+               <Button fx:id="buttonDeleteContact" layoutX="65.0" layoutY="11.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="224.0" styleClass="standard-button" stylesheets="@../css/main_style.css" text="Удалить контакт" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="9.0" />
+            </children>
+         </AnchorPane>
+      </VBox>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Настройки списка контактов" textAlignment="CENTER" textFill="#606060" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane fx:id="anchorPaneMainHeader" prefHeight="27.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <AnchorPane fx:id="anchorPaneHeaderButtons" layoutX="5.0" prefHeight="20.0" prefWidth="72.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="2.0">
+         <Button fx:id="buttonHeaderMax" disable="true" maxHeight="14.0" maxWidth="14.0" minHeight="14.0" minWidth="14.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="14.0" stylesheets="@../css/main_style.css" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="4.0">
+            <styleClass>
+               <String fx:value="header-button" />
+               <String fx:value="max-button" />
+            </styleClass>
+         </Button>
+         <Button fx:id="buttonHeaderClose" maxHeight="14.0" maxWidth="14.0" minHeight="14.0" minWidth="14.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="14.0" stylesheets="@../css/main_style.css" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="4.0">
+            <styleClass>
+               <String fx:value="header-button" />
+               <String fx:value="close-button" />
+            </styleClass>
+         </Button>
+         <Button fx:id="buttonHeaderMin" maxHeight="14.0" maxWidth="14.0" minHeight="14.0" minWidth="14.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="14.0" stylesheets="@../css/main_style.css" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="4.0">
+            <styleClass>
+               <String fx:value="header-button" />
+               <String fx:value="min-button" />
+            </styleClass>
+         </Button>
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>
